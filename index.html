@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Message for Averos</title> 
+  <link rel="stylesheet" href="style.css"> 
+ </head>
+ 
+ <body> 
+  <div class="wrapper"> 
+   <h2 class="question">You really like me?</h2> 
+   <img class="gif" alt="gif" src="gifyou.webp"> 
+   <div class="btn-group"> <button class="yes-btn" onclick='music()'>Yes</button> <button class="no-btn">No</button> 
+    <audio id="yes-btn" src='as.mp3'loop></audio>
+   </div> 
+  </div> 
+  <script id="yes-btn" src="script.js"></script> 
+  <script>
+    var audioPlaying = false; 
+    function music(){
+        var audio = document.getElementById("yes-btn");
+        audio.play();
+    }
+  </script>
+ </body>
+</html>
